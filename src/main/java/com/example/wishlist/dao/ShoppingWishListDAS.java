@@ -14,7 +14,6 @@ public class ShoppingWishListDAS implements ShoppingWishListDao {
     @Override
     public int insertWish(ShoppingWishList shoppingWishList) { //post
         Transaction transaction = null;
-        System.out.println("aici");
         try(Session session = HibernateUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
             session.save(shoppingWishList);

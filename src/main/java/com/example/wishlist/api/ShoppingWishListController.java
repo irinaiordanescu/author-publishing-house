@@ -22,7 +22,6 @@ public class ShoppingWishListController {
 
     @PostMapping()
     public int addWish(@Validated @NonNull @RequestBody ShoppingWishList shoppingWishList) {
-        System.out.println("aiciC");
         return shoppingWishListService.addWish(shoppingWishList);
     }
 
