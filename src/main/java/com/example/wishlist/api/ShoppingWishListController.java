@@ -41,7 +41,7 @@ public class ShoppingWishListController {
         shoppingWishListService.deleteWishById(id);
     }
 
-    @PutMapping
+    @PutMapping(path = "{id}")
     public void updateWishById(@PathVariable("id") int id,  @Validated @NonNull @RequestBody String shopNameToUpdate) {
         shoppingWishListService.updateWishByShopName(id, shopNameToUpdate);
     }

@@ -8,7 +8,6 @@ import java.util.UUID;
 public interface ShoppingWishListDao {
     int insertWish(ShoppingWishList shoppingWishList); //post
 
-
     List<ShoppingWishList> selectAllWishes(); //get
 
     Optional<ShoppingWishList> selectWishById(int id); //get
