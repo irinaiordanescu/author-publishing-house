@@ -25,11 +25,12 @@ public class ShoppingWishListController {
         return shoppingWishListService.addWish(shoppingWishList);
     }
 
-
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping
     public List<ShoppingWishList> getAllWishes(){
         return shoppingWishListService.getAllWishes();
     }
+
 
     @GetMapping(path = "{id}")
     public Optional<ShoppingWishList> getWishById(@PathVariable("id") int id) {

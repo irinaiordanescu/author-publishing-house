@@ -19,7 +19,6 @@ public class ShoppingWishListService {
     }
 
     public int addWish(ShoppingWishList shoppingWishList) {
-        System.out.println("aiciS");
         return shoppingWishListDao.insertWish(shoppingWishList);
     }
 
